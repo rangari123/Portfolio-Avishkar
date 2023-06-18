@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>PortFolio</title>
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li><a class="header__link" href="#about">About</a></li>
+        <li><a class="header__link" href="#featured">Work</a></li>
+        <li><a class="header__link" href="#contact">Contact</a></li>
+        <li class="header__line"></li>
+        <li>
+          <button id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn"
+            href="https://docs.google.com/document/d/1qhNg6ZEgPSZKO4tNzUWvqChC3_u44d6PCWVweEPguDQ/edit?usp=drive_link"
+            target="_blank">Resume</a>
+        </li>
+      </ul>
+      <button class="header__bars"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fillRule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clipRule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- mobile navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="#">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- end of mobile navigation -->
+
+
+
+  <main>
+
+    <section class="hero container">
+      <img class="hero__img" src="/face.jpg" alt="Profile Picture">
+      <h2 class="hero__subtitle">Hi , I'm Avishkar 👋</h2>
+      <h1 class="hero__title">SOFTWARE ENGINEER.</h1>
+      <p class="hero__description">A passionate <strong> Software Engineer</strong> having keen interst in problem
+        solving
+        i.e <strong>Competitive Programming</strong>
+        and building pixel perfect interactive UI/UX <strong>Web applications</strong> </p>
+      <a class="hero__btn btn" href="mailto:avishkarrangari213@gmail.com" target="_blank">Reach out</a>
+    </section>
+
+    <section id="about" class="about container section">
+
+      <div class="about__content">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">
+          Hello there! I'm Avishkar, a
+          <strong>Software Engineer</strong>, web developer
+          from INDIA. I have a deep appreciation for clean and intuitive user interfaces. My
+          goal is to create visually appealing websites that provide an exceptional user experience.
+        </p>
+        <p class="about__description">
+          I'm constantly exploring new tools and frameworks to enhance development efficiency and deliver high-quality
+          products.
+        </p>
+        <p class="about__description">
+          If you're interested in learning more about our work and keeping up with the latest web development trends,
+          feel free to check out my
+          <a href="#">website</a>
+          <hr class="about__hr" />
+        <h3 class="about__subtitle">Technologies</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">⭐ JavaScript (ES6+)</li>
+            <li class="about__list">⭐ CSS3</li>
+            <li class="about__list">⭐ HTML5</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">⭐ ReactJS</li>
+            <li class="about__list">⭐ Canvas</li>
+            <li class="about__list">⭐ TailwindCSS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about__img-wrapper">
+        <img class="about__img" src="public/undraw_web_developer_re_h7ie.svg" alt="Profile svg">
+      </div>
+    </section>
+
+
+    <section id="featured" class="featured container section">
+      <h3 class="featured__subtitle">Featured project</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">Modern design WebCraft</h2>
+        <a href="https://github.com/rangari123" target="_blank" class="featured__link"
+          aria-label="link featured projects">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fillRule="evenodd"
+              d="M19.902 4.098a3.75 3.75 0 00-5.304 0l-4.5 4.5a3.75 3.75 0 001.035 6.037.75.75 0 01-.646 1.353 5.25 5.25 0 01-1.449-8.45l4.5-4.5a5.25 5.25 0 117.424 7.424l-1.757 1.757a.75.75 0 11-1.06-1.06l1.757-1.757a3.75 3.75 0 000-5.304zm-7.389 4.267a.75.75 0 011-.353 5.25 5.25 0 011.449 8.45l-4.5 4.5a5.25 5.25 0 11-7.424-7.424l1.757-1.757a.75.75 0 111.06 1.06l-1.757 1.757a3.75 3.75 0 105.304 5.304l4.5-4.5a3.75 3.75 0 00-1.035-6.037.75.75 0 01-.354-1z"
+              clipRule="evenodd" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description">Portfilio website using simple html css and vanilla JS , <br>
+        E-voting sysete based on Blockchain <br>
+        ,Grossery Addons using CRUD
+        Simple TO-DO list on the basic of CRUD application, <br>
+        Chrome extension using html css javscript,
+        Calculator of different types includes precentage calculator,
+        temprature convertor etc...
+      </p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tech stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">TailwindCSS</li>
+            <li class="featured__info">Javacript</li>
+            <li class="featured__info">ReactJS</li>
+            <li class="featured__info">Canvas</li>
+            <li class="featured__info">Blockchain</li>
+            <li class="featured__info">Netlify</li>
+            <li class="featured__info">Git&GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">Project type</h3>
+          <p class="featured__info">Frount-End</p>
+          <p class="featured__info">Blockchain</p>
+          <p class="featured__info">CRUD</p>
+        </div>
+        <div>
+          <h3 class="featured__label">Timeline</h3>
+          <p class="featured__info">December 2022 - present</p>
+
+        </div>
+      </div>
+      <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+          <img src="./public/API.png" alt="Webstie design using js">
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="./public/Electronicweb.png" alt="Webstie design using js">
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="./public/full-page.png" alt="Webstie design using js">
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="./public/griid.png" alt="Webstie design using js">
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="./public/grodery-todo.png" alt="Webstie design using js">
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="./public/Blockchain.png" alt="Webstie design using js">
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="./public/chrome-extension.jpeg" alt="Webstie design using js">
+        </div>
+        <div class="featured__img-wrapper">
+          <img src="./public/website-grocery.png" alt="Webstie design using js">
+        </div>
+      </div>
+    </section>
+
+    <section class="work container section">
+      <h2 class="work__title">Projects</h2>
+      <p class="work__description">
+        These Projects are based on tailwind css from the challange of icodethis platfrom also uses js for functionality
+        and front mentor challanges were also done.
+      </p>
+
+
+      <div class="work__container">
+        <!-- project-1 -->
+        <h3 class="work__project-title">Wax Pottery</h3>
+        <div class="work__img-wrapper work__img ae1">
+          <img src="./public/pottery.png" class="lazy loading" alt="">
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__project__title">Pottery</h3>
+          <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim
+            pariatur deserunt do ad exercitation.</p>
+
+          <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+            commodo.
+            Do esse excepteur cillum deserunt
+            duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing
+            cupidatat
+            sint.</p>
+
+          <a href="#" class="btn work__project-btn">Website</a>
+        </div>
+        <!-- end project-1 -->
+
+        <!-- project-2-->
+        <h3 class="work__project-title">Web Search</h3>
+        <div class="work__img-wrapper work__image2">
+          <img src="./public/web.png" alt="">
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project__title">Web Search</h3>
+
+          <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim
+            pariatur deserunt do ad exercitation.</p>
+
+          <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+            commodo.
+            Do esse excepteur cillum deserunt
+            duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing
+            cupidatat
+            sint.</p>
+
+          <a href="#" class="btn work__project-btn">Website</a>
+        </div>
+        <!-- end project-2 -->
+
+        <!-- project-3-->
+        <h3 class="work__project-title">Web Search</h3>
+        <div class="work__img-wrapper work__image3">
+          <img src="./public/destiny.png" alt="">
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__project__title">Destiny</h3>
+
+          <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim
+            pariatur deserunt do ad exercitation.</p>
+
+          <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+            commodo.
+            Do esse excepteur cillum deserunt
+            duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing
+            cupidatat
+            sint.</p>
+
+          <a href="#" class="btn work__project-btn">Website</a>
+        </div>
+
+        <!-- end project-3 -->
+
+        <!-- project-4-->
+        <h3 class="work__project-title">Web Search</h3>
+        <div class="work__img-wrapper work__image4">
+          <img src="./public/gallery.png" alt="">
+        </div>
+        <div class="work__project work__content4">
+          <h3 class="work__project__title">Web Gallery</h3>
+
+          <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim
+            pariatur deserunt do ad exercitation.</p>
+
+          <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+            commodo.
+            Do esse excepteur cillum deserunt
+            duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing
+            cupidatat
+            sint.</p>
+
+          <a href="#" class="btn work__project-btn">Website</a>
+        </div>
+        <!-- end project-4 -->
+
+        <!-- project-5-->
+        <h3 class="work__project-title">Web Search</h3>
+        <div class="work__img-wrapper work__image5">
+          <img src="./public/subsribe.png" alt="">
+        </div>
+        <div class="work__project work__content5">
+          <h3 class="work__project__title">Subscribe</h3>
+
+          <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim
+            pariatur deserunt do ad exercitation.</p>
+
+          <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+            commodo.
+            Do esse excepteur cillum deserunt
+            duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing
+            cupidatat
+            sint.</p>
+
+          <a href="#" class="btn work__project-btn">Website</a>
+        </div>
+        <!-- end project-5 -->
+
+        <!-- project-6-->
+        <h3 class="work__project-title">Wax Pottery</h3>
+        <div class="work__img-wrapper work__image6">
+          <img src="./public/icode.png" class="lazy loading" alt="">
+        </div>
+        <div class="work__project work__content6">
+          <h3 class="work__project__title">PlatformCode</h3>
+          <p class="work__project-description1">Labore magna ut non labore Lorem nisi culpa sint et quis sint. Enim
+            pariatur deserunt do ad exercitation.</p>
+
+          <p class="work__project-description2">Ea ut non cupidatat consequat sint elit ipsum culpa dolor cillum
+            commodo.
+            Do esse excepteur cillum deserunt
+            duis incididunt. Eu tempor ullamco aliqua consectetur incididunt anim dolor sunt laboris adipisicing
+            cupidatat
+            sint.</p>
+
+          <a href="#" class="btn work__project-btn">Website</a>
+        </div>
+        <!-- end project-6 -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact container section">
+      <h2 class="contact__title">Get In Contact</h2>
+      <p class="contact__description">
+        Whether you are starting a project, have business inquiries or just
+        want to say hi, my inbox is always open so feel free to reach out and
+        I will get back to you as soon as possible.
+      </p>
+      <a class="contact__btn btn" href="mailto:avishkarrangari213@gmail.com" target="_blank">React Out</a>
+    </section>
+  </main>
+
+
+  <footer class="footer container section">
+    <h3 class="footer__title">~ <span><a href="#">Avishkar</a></span> Rangari ~</h3>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
